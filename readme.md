@@ -1,15 +1,8 @@
 [MidwestJS 2018](http://midwestjs.com/#/schedule)
 
-# Bad Software
-- No one read user manuals
-- Make sure to involve users
-- Do not build over-complicated UI with too many controls
-- White-board designing can save time and fix issue before head
-- [Kano model](https://en.wikipedia.org/wiki/Kano_model). Basic needs, Fully implemented, Delighters
-
-
 # Automated testing with [Cypress.io](https://www.cypress.io/)
 [Slides](https://mike-plummer.github.io/cypress-presentation/)
+
 Selenium issues: outdated APIs, old browsers, cross-browser compatibility, flaky tests
 - Cypress:
   - runs inside the browser and replaces the browser <-> app interface
@@ -26,21 +19,6 @@ Selenium issues: outdated APIs, old browsers, cross-browser compatibility, flaky
   - ability to create re-usable sequences of commands
   - works with use Mocka/Chai/Sinon
   - [Using async and await](https://medium.com/@NicholasBoll/cypress-io-using-async-and-await-4034e9bab207) instead of promises
-
-
-# All aboard the Hypertrain: Blockchains or bust (Blockchain for Fun and Profit)
-[Slides](https://github.com/delventhalz/pirate-talk)
-- Decentralized algorithmic trust
-
-
-# Selling your Boss on GraphQL
-[Slides](https://r-walsh.github.io/graphql-tech-talk/assets/player/KeynoteDHTMLPlayer.html)
-- Apollo can check types
-- DataLoader (from Facebook) to avoid N+1
-- Framework can have caching mechanisms, as well as monitoring/profiling tools
-- Apollo Link Rest (currently in beta) to proxy requests
-- BAAS (BackEnd As A Service): GraphCool, GraphCMS, AWS AppSync, Hasura
-- GitHub Facebook, Shopify, Credit Karma, Walmart have adopted GraphQL
 
 
 # Harness the Power of ASTs using jscodeshift
@@ -89,15 +67,6 @@ OpenID Connect
 - Auth0 and Okta are OAuth providers easy to use with React
 
 
-# Pack your Callbags! A new spec for Streams
-[Slides](https://github.com/lund0n/callbags-midwestjs)
-[Callbags](https://github.com/callbag/callbag)
-[Callbags Basics](https://github.com/staltz/callbag-basics) Tiny and fast reactive/iterable programming library
-For unifying Push and Pull operations
-- `from([1,2,3,4,5]).pipe(filter(x => x % 2 === 0), map(x => x+5), scan((acc,curr) => ac+curr)).subscribe(x => console.log(x))`
-- 0: start (sent by the producer), 1: data, 2: stop (sent by the consummer or producer)
-
-
 # Forgot Password? Yes I Did!
 [Slides](https://www.slideshare.net/JoelLord4/forgot-password-yes-i-did), [repo](https://github.com/joellord/secure-spa-auth0)
 - 1961: introduction of password at MIT
@@ -120,13 +89,50 @@ For unifying Push and Pull operations
 
 # Using JavaScript to write Native Applications/SDK's for iOS, Android and the Web
 [Slides](https://www.slideshare.net/DerekAnderson20/using-javascript-to-write-native-mobile-applications)
+
 Advantages of using JS framework (like React Native):
 - Dynamically updatable UI. No need to repush to the App/Play Store.
 - Less friction with merchants
+
 [Syr](https://github.com/syrjs/core) ([main page](https://syr.js.org/)), light-weight version of React Native by **Paypal** (doesn't include React)
   - Works for iOS/Android/Web, with the same code
   - Syr-push
   - Syr-bus (for communication between components/iframes)
+
+
+# Bad Software
+- No one read user manuals
+- Make sure to involve users
+- Do not build over-complicated UI with too many controls
+- White-board designing can save time and fix issue before head
+- [Kano model](https://en.wikipedia.org/wiki/Kano_model). Basic needs, Fully implemented, Delighters
+
+
+# Selling your Boss on GraphQL
+[Slides](https://r-walsh.github.io/graphql-tech-talk/assets/player/KeynoteDHTMLPlayer.html)
+- Apollo can check types
+- DataLoader (from Facebook) to avoid N+1
+- Framework can have caching mechanisms, as well as monitoring/profiling tools
+- Apollo Link Rest (currently in beta) to proxy requests
+- BAAS (BackEnd As A Service): GraphCool, GraphCMS, AWS AppSync, Hasura
+- GitHub Facebook, Shopify, Credit Karma, Walmart have adopted GraphQL
+
+
+# Pack your Callbags! A new spec for Streams
+[Slides](https://github.com/lund0n/callbags-midwestjs)
+
+[Callbags](https://github.com/callbag/callbag)
+
+[Callbags Basics](https://github.com/staltz/callbag-basics) Tiny and fast reactive/iterable programming library
+
+For unifying Push and Pull operations
+- `from([1,2,3,4,5]).pipe(filter(x => x % 2 === 0), map(x => x+5), scan((acc,curr) => ac+curr)).subscribe(x => console.log(x))`
+- 0: start (sent by the producer), 1: data, 2: stop (sent by the consummer or producer)
+
+
+# All aboard the Hypertrain: Blockchains or bust (Blockchain for Fun and Profit)
+[Slides](https://github.com/delventhalz/pirate-talk)
+- Decentralized algorithmic trust
 
 
 ## See also
