@@ -41,32 +41,6 @@ Selenium issues: outdated APIs, old browsers, cross-browser compatibility, flaky
 - Using a lib like [Freeze.js](https://github.com/cvazac/freeze.js) to freeze constructors, methods, and properties
 
 
-# I don't Care About Security and Neither Should You
-[Slides](https://t.co/Wqc29sw0Gp), [repo](https://github.com/joellord/secure-spa-auth0)
-
-OAuth
-- [JWT.io](https://jwt.io/) to parse JWT tokens
-- JWT tokens ahve a header, content and signature.
-- Do not store sentitive information in a JWT tokens as base64 encoded, but not encrypted!
-- express-jwt: JWT middleware token validator
-- Do not store token into Local Storage, use cookies instead (but it is vulnerable to CSRF, cf `Shields Up! Security and React Apps` talk) or a store
-- Reset token should be stored in a more permanent way like on the API database.
-- `app.get('*', () => {})` to catch all 404
-
-OpenID Connect
-- Allowing scopes (openid, profile, email, address, phone)
-- playground for developers to test and work with OpenID Connect: [OpenIDConnect.net](https://openidconnect.net/)
-
-
-# Shields Up! Security and React Apps
-[Slides](https://github.com/ZacharyKlein/shields-up-securing-react-apps)
-- Run `npm audit`
-- Potential loopholes for XSS with React: `href` and `formaction`.
-- Once data makes it to the UI, it's too late to secure it.
-- Authorization needs to be checked at every endpoint.
-- Auth0 and Okta are OAuth providers easy to use with React
-
-
 # Forgot Password? Yes I Did!
 [Slides](https://www.slideshare.net/JoelLord4/forgot-password-yes-i-did), [repo](https://github.com/joellord/secure-spa-auth0)
 - 1961: introduction of password at MIT
@@ -85,6 +59,32 @@ OpenID Connect
   - YubiKeys (WebAuthn API)
   - Biometrics. **You can't change your biometrics if there is a leak!!!**
   - Magic links (will send an email to your email address, cf Slack, Amazon)
+
+
+# Shields Up! Security and React Apps
+[Slides](https://github.com/ZacharyKlein/shields-up-securing-react-apps)
+- Run `npm audit`
+- Potential loopholes for XSS with React: `href` and `formaction`.
+- Once data makes it to the UI, it's too late to secure it.
+- Authorization needs to be checked at every endpoint.
+- Auth0 and Okta are OAuth providers easy to use with React
+
+
+# I don't Care About Security and Neither Should You
+[Slides](https://t.co/Wqc29sw0Gp), [repo](https://github.com/joellord/secure-spa-auth0)
+
+OAuth
+- [JWT.io](https://jwt.io/) to parse JWT tokens
+- JWT tokens ahve a header, content and signature.
+- Do not store sentitive information in a JWT tokens as base64 encoded, but not encrypted!
+- express-jwt: JWT middleware token validator
+- Do not store token into Local Storage, use cookies instead (but it is vulnerable to CSRF, cf `Shields Up! Security and React Apps` talk) or a store
+- Reset token should be stored in a more permanent way like on the API database.
+- `app.get('*', () => {})` to catch all 404
+
+OpenID Connect
+- Allowing scopes (openid, profile, email, address, phone)
+- playground for developers to test and work with OpenID Connect: [OpenIDConnect.net](https://openidconnect.net/)
 
 
 # Using JavaScript to write Native Applications/SDK's for iOS, Android and the Web
